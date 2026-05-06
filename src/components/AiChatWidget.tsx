@@ -6,7 +6,7 @@ interface Message {
   timestamp: number;
 }
 
-const GEMINI_API_KEY = "AIzaSyBTDsjEUjD7Oljmav6DKUbV8yuwtnEd844";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY ?? "";
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 // Ordered fallback chain — try each until one works
 const MODELS = [
