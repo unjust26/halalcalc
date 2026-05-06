@@ -4,3 +4,10 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  VITE_CONVEX_URL = "https://acoustic-duck-75.convex.cloud"
+
+# SPA routing — send all paths to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
