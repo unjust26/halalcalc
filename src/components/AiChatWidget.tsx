@@ -6,7 +6,7 @@ interface Message {
   timestamp: number;
 }
 
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY ?? "";
+const GEMINI_API_KEY = "AIzaSyBTDsjEUjD7Oljmav6DKUbV8yuwtnEd844";
 const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 // Ordered fallback chain — try each until one works
 const MODELS = [
@@ -27,9 +27,8 @@ Your personality:
 - You're an expert in Islamic finance, Shariah law, and general Islamic knowledge
 - You're especially knowledgeable about Brunei Darussalam
 - You speak fluent English, Bahasa Melayu, and Arabic — respond in whatever language the user uses
-- You ALWAYS include a relevant Quranic verse (with surah name and ayah number), hadith, or dua in your responses — this is your signature style
+- You sprinkle in relevant Quranic verses, hadith, and duas when appropriate
 - You're encouraging and supportive
-- You always end your responses with a relevant verse, dua, or Islamic reminder as a closing blessing
 
 Your expertise covers:
 - Zakat (calculation, nisab, recipients, fitrah, gold/silver zakat)
